@@ -11,11 +11,11 @@ public class ButtonExample : MonoBehaviour
     private int _buttonCounter = 0;
     //Connect to the Text On Screen that will update 
     public TextMeshProUGUI textMesh;
-    private Data data;
+    private Data2 data;
 
     public void Start()
     {
-        data = GameObject.Find("Data").GetComponent<Data>();
+        data = GameObject.Find("Data2").GetComponent<Data2>();
         _buttonCounter = data.GetCounter();
         textMesh.text = "Score: " + _buttonCounter;
     }

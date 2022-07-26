@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class ExitScript : MonoBehaviour
 {
     //Holds the name of the next level 
-    public string nextLevelName; 
+    public string nextLevelName;
 
     //Used by the button to load the scene 
-   public void LoadScene()
+    public void LoadScene()
     {
         SceneManager.LoadScene(nextLevelName);
     }
